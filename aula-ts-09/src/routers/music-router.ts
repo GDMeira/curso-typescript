@@ -6,6 +6,6 @@ import { musicSchema } from "../schemas/music-schemas";
 const musicRouter = Router();
 
 musicRouter.get("/musics", musicController.getMusics);
-musicRouter.post("/musics", schemaValidation(musicSchema), musicController.createMusic); // TODO: validação via Joi
+musicRouter.post("/musics", schemaValidation(musicSchema), musicController.createMusic); 
 
 export default musicRouter;
